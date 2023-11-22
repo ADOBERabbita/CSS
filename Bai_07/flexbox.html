@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            background: #7C4991;
+            padding: 20px;
+            border-radius: 5px;
+            height: 500px;
+        }
+        .item {
+            background-color: #F7941F;
+            border: 3px solid #fff;
+            padding: 10px;
+            margin: 10px;
+            font-size: 28px;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+        }
+        .container {
+            
+                      /* giúp sắp xếp các phần tử 1 cách dễ dàng, linh hoạt hơn trước */
+            
+            display: flex;                                                                                               
+            /* (giúp các thành phần linh hoạt, chiều rộng bằng 100%) */
+            
+            display: inline-flex;                
+            /* (giúp các thành phần linh hoạt, chiều rộng bằng chiều rộng của các item bên trong) */
+            
+            /* -------------------------------------------------------------------------------------  */
+            
+                      /* xác định hướng của main-axis để container sắp xếp lại các item */
+            
+            flex-direction: row;                                                            
+            /* (mặc định, item đc xếp chiều ngang từ trái qua phải) */
+            
+            flex-direction: row-reverse;         
+            /* (item đc xếp chiều ngang từ phải qua trái) */
+            
+            flex-direction: column;              
+            /* (item đc xếp theo chiều dọc, từ trên xuống dưới) */
+            
+            flex-direction: column-reverse;      
+            /* (item đc xếp theo chiều dọc, từ dưới lên trên) */
+            
+            /* -------------------------------------------------------------------------------------  */
+            
+                      /* cho phép item có tự động xuống dòng hay ko khi kích thước container thay đổi */
+            
+            flex-wrap: nowrap;                                                              
+            /* (mặc định, tất cả các item nằm trên 1 dòng) */
+            
+            flex-wrap: wrap;                     
+            /* (khi tổng chiều rộng các item cộng lại lớn hơn chiều rộng của container thì item sẽ tự động xuống dòng) */
+
+            flex-wrap: wrap-reverse;             
+            /* (tương tự wrap, nhưng thay vì nhảy xuống dòng thì item sẽ tự động nhảy lên trên) */
+
+            /* -------------------------------------------------------------------------------------  */
+            
+                      /* điều chỉnh vị trí bắt đầu và căn chỉnh các item theo trục main-axis */
+            
+            justify-content: flex-start;                                                                                 
+            /* mặc định, item sẽ bắt đầu từ lề chính main-start (lề trái) của container */
+
+            justify-content: flex-end;
+            /* item sẽ bắt đầu từ lề chính main-end (lề phải) của container (khác với flex-direction: row-reverse; là đổi hướng hiển thị) */
+
+            justify-content: center;
+            /* item sẽ nằm giữa container */
+
+            justify-content: space-between;
+            /* khoảng cách giữa các item bằng nhau, item đầu tiên và cuối cùng sát với lề */
+
+            justify-content: space-around;
+            /* tương tự space-between, nhưng khác ở chỗ: khoảng cách giữa item và lề =1/2 khoảng cách giữa item và item */
+
+            justify-content: space-evenly;
+            /* tưởng tự space-between, nhưng khác ở chỗ: khoảng cách giữa item và lề = khoảng cách giữa item và item */
+
+            /* -------------------------------------------------------------------------------------  */
+            
+                      /* điều chỉnh vị trí bắt đầu và căn chỉnh các item theo trục cross-axis, dùng để căn chỉnh cho 1 dòng */
+            
+            align-items: stretch;                                                                                         
+            /* mặc định, các phần tử sẽ tự động tăng chiều cao để lấp đầy chiều cao của container, nhưng sẽ ưu tiên giá trị height (nếu có) */
+
+            align-items: flex-start;
+            /* item sẽ bắt đầu từ lề cross-start (lề trên) của container */
+
+            align-items: flex-end;
+            /* item sẽ bắt đầu từ lề cross-end (lề dưới) của container */
+
+            align-items: center;
+            /* item sẽ căn giữa theo chiều cao của cross-axis */
+
+            /* -------------------------------------------------------------------------------------  */
+            
+                      /* Thuộc tính align-content sử dụng để điều chỉnh vị trí bắt đầu và căn chỉnh các item theo trục cross-axis. Dùng để căn chỉnh cho nhiều dòng. */
+            
+            align-content: stretch; 
+            /* Mặc định. Các phần tử tự động tăng chiều cao sao cho lấp đầy container (Vẫn ưu tiên giá trị height nếu có) */
+            
+            align-content: flex-start;
+            /* Item sẽ bắt đầu từ lề chứa cross-start của container */
+            
+            align-content: flex-end;
+            /* Item sẽ bắt đầu từ lề chứa cross-end của container */
+            
+            align-content: center;
+            /* Item sẽ nằm giữa container căn theo cross-axis */
+            
+            align-content: space-between;
+            /* Khoảng cách giữa các item bằng nhau. Item đầu tiên và cuối cùng sát với lề */
+            
+            align-content: space-around;
+            /* Tương tự space-between, nhưng khác ở chỗ: Khoảng cách giữa item và lề = 1/2 khoảng cách giữa item và item */
+           
+            align-content: space-evenly;
+            /* Tương tự space-between, nhưng khác ở chỗ: Khoảng cách giữa item và lề = khoảng cách giữa item và item */
+
+            /* -------------------------------------------------------------------------------------  */
+
+                      /* Tương tự như align-items nhưng là áp dụng cho một item nào đó. */
+
+            align-self: auto;
+            /* Mặc định */
+
+            align-self: stretch;
+            /* Các phần tử sẽ tự động tăng chiều cao để lấp đầy chiều cao của container, nhưng sẽ ưu tiên giá trị height (nếu có) */
+
+            align-self: flex-start;
+            /* Item sẽ bắt đầu từ lề cross-start của container */
+
+            align-self: flex-end;
+            /* Item sẽ bắt đầu từ lề cross-end của container */
+
+            align-self: center;
+            /* Item sẽ căn giữa theo chiều của cross-axis */
+
+            /* -------------------------------------------------------------------------------------  */
+            
+                      /* Thuộc tính order dùng để sắp xếp lại vị trí của các item, gtri mặc định = 0 */
+            order: 0;
+
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <!-- <div class="item">Item 6</div>
+        <div class="item">Item 7</div> -->
+    </div>
+
+</body>
+</html>

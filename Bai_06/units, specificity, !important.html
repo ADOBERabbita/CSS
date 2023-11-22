@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Units (đơn vị): 
+        - Độ dài tuyệt đối: - là loại đơn vị có gtri cố định và thể hiện chính xác chiều dài kích thước nó hiển thị, ko phụ thuộc cũng như ko thay đổi bất kỳ tác động bên ngoài nào 
+                            - Một số đơn vị : - cm 
+                                              - mm
+                                              - in: inches(1in=96px=2.54cm)
+                                              - px:pixels(1px=1/96in)
+                                              - pt:point(1pt=1/72in)
+                                              - pc:picas(1pc=12pt)
+        
+        - Độ dài tương đối: - là đơn vị đo lường đc sd trong CSS ở mức tương đối, thường phụ thuộc vào 1 thành phần nào đó thì mới xác định đc gtri của nó
+                            - Một số đơn vị: - %: gtri tương đối so với phần tử cha 
+                                             - rem: gtri tương đối với font-size của phần tử gốc, phần tử gốc ở đây là thẻ html
+                                             - em: 1m tương đương với kích cỡ của 1 font-size của phần tử cha có định nghĩa font-size
+                                             - vw (view width): 1vw tương đương với 1% của chiều rộng cửa sổ trình duyệt
+                                             - vh (view height): 1vh tương đương với 1% của chiều cao cửa sổ trình duyệt
+                                             - ex: 1ex tương đương với chiều cao của 1 chữ x của font hiện tại
+                                             - ch: 1ch tương đương với chiều rộng của 1 số 0 theo size hiện tại-->
+
+    <!-- Specificity (tính đặc hiệu)
+    - là cách mà trình duyệt quyết định sẽ áp dụng thuộc tính css nào với một phần tử khi có nhiều quy tắc css cùng trỏ đến phần tử đó
+    - sự phân cấp tính đặc hiệu: Mỗi selector đều có vtri của nó trong hệ thống phân cấp, có 4 mức độ: inline -> id -> classes, attributes, pseudo-class -> elements, pseudo-elements
+    - tính toán tính đặc hiệu, ta biểu diễn tương đối tính đặc hiệu của 1 selector, sau đó xem giá trị nào càng cao thì càng được ưu tiên:
+         - 1-0-0-0: Inline style
+         - 0-X-0-0: số lượng ID selector
+         - 0-0-Y-0: số lượng classes, attributes và pseudo-classes
+         - 0-0-0-Z: số lượng elements và pseudo-elements
+         - Viết CSS theo kiểu Internal và External ko có độ ưu tiên
+         - Universal selector(*) và cmbinator(+,>,~) ko làm tăng tính đặc hiệu -->
+
+    <!-- !important (quan trọng)
+    - đc sd để thay đổi thứ tự ưu tiên của CSS, khi 1 thuộc tính CSS nào đó đc gán lệnh important thì đồng nghĩa với việc nó sẽ có mức ưu tiên cao nhất. nếu có nhiều thuộc tính cùng có !important thì lại quay về bài toán tính độ ưu tiên
+
+</body>
+
+</html>

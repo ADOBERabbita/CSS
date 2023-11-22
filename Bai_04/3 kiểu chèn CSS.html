@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 kiểu chèn CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style>
+
+        .header {
+            background: orange;
+        } 
+        p {
+            color: green;
+            font-size: 30px;
+
+        }
+
+    </style> -->
+
+</head>
+<body>
+
+    <header class="header">
+        Header
+    </header>
+    
+    <!-- 3 kiểu chèn CSS -->
+
+    <!-- inline CSS (nội tuyến): - Thêm thuộc tính style vào trong thẻ mà muốn sửa CSS
+                                 - Có thể được sd để áp dụng 1 kiểu duy nhất cho 1 element -->
+    <p style="color: red; font-size: 40px;">Nội dung 01</p>
+    
+    <!-- internal CSS (nội bộ):  - Thêm thẻ <style> vào bất cứ đâu trong file html, sau đó viết CSS vào trong
+                                 - Thường thì thẻ <style> này sẽ nằm trong thẻ <head>
+                                 - Có thể đc sd nếu có 1 trang HTML duy nhất-->
+    <p>Nội dung thẻ 02</p>
+    <p>Nội dung thẻ 03</p>
+    <p>Nội dung thẻ 04</p>
+    <p>Nội dung thẻ 05</p>
+
+    <!-- external CSS (bên ngoài): - Ta thêm 1 file CSS ở bên ngoài, sau đó dùng thẻ <link/> đặt ở trong thẻ <head> và chèn đường dẫn vào thuộc tính href ở trong thẻ link
+                                   - Có thể thay đổi giao diện của toàn bộ trang web bằng cách chỉ thay đổi 1 tệp -->
+
+</body>
+</html>

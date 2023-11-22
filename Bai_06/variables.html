@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Mục đích của khai báo biến là đẻ có thể sử dụng đc ở nhiều nơi 
+    - Kiểu global (toàn cục): có thể sử dụng đc nhiều nơi trong file css
+    - Kiểu local (cục bộ): chỉ sử dụng đc trong phạm vi của nó, những đoạn css khác ko sử dụng đc -->
+
+    <style>
+        :root {
+            --color-one: #006eae;
+            --color-two: #333333;
+        }
+
+        h2 {
+            color: var(--color-one);
+        }
+
+        p {
+            color: var(--color-two);
+        }
+
+        h3 {
+            --local-color: rgb(2, 184, 2);
+            color: var(--local-color)
+        }
+    </style>
+    
+    <h2>Nội dung thẻ h2</h2>
+    <h3>Nội dung thẻ h3</h3>
+    <h4>Nội dung thẻ h4</h4>
+    <p>Nội dung thẻ p</p>
+
+</body>
+
+</html>

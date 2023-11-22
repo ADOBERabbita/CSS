@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Các hàm toán học
+    - Hàm calc(): - thực hiện 1 phép tính, kq sẽ lấy làm gtri thuộc tính. Các toán tử sau có thể đc sd: + - * /
+                  - ví dụ: width:calc(100% - 100px)
+    - Hàm max(): - sd gtri lớn nhất, từ danh sách gtri ddc phân tách bằng dấu phẩy, làm giá trị thuộc tính.
+                 - cú pháp: max(value1, value2,...)
+                 - ví dụ: width: max(50%,300px)
+    - Hàm min(): - sd gtri nhor nhất, từ danh sách gtri ddc phân tách bằng dấu phẩy, làm giá trị thuộc tính.
+                 - cú pháp: min(value1, value2,...)
+                 - ví dụ: width: min(50%,300px) -->
+
+    <style>
+        .parent {
+            background-color: yellow;
+            width: 500px;
+            height: 300px;
+            position: relative;
+        }
+        .child {
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: calc(50% - 25px);
+            left: calc(50% - 25px);
+        }
+    </style>
+
+    <div class="parent">
+        <div class="child">Box con</div>
+    </div>
+
+</body>
+</html>

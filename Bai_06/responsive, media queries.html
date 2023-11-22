@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- trong đó: - viewport: Giúp rình duyệt hiểu thẻ meta này dùng để thiết lập khung nhìn
+                   - width=device-width: Đặt chiều rộng bằng chiều rộng thiết bị
+                   - initial-scale=1.0: Mức thu phóng của website, thường đc đặt bằng 1 -->
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            color: red;
+            font-size: 80px;
+        }
+        @media screen and (max-width: 1024px) {
+            h1 {
+                color: green;
+                font-size: 70px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            h1 {
+                color: blue;
+                font-size: 60px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            h1 {
+                color: purple;
+                font-size: 50px;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            h1 {
+                color: orange;
+                font-size: 40px;
+            }
+        }
+    </style>
+
+    <img src="https://png.pngtree.com/thumb_back/fw800/background/20230408/pngtree-blue-sky-clear-sky-image_2168219.jpg" alt="">
+
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil veniam sequi dolorum, autem quae eligendi suscipit quod, 
+        libero harum, consequatur ipsa nam laudantium ipsam labore pariatur dolore error tempora aliquid.
+    </h1>
+
+</body>
+</html>

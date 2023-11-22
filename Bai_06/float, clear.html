@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float, clear</title>
+</head>
+<body>
+
+    <!-- Float: là 1 thuộc tính đc sd để chuyển 1 phần tử sang góc trái or góc phải của ko gian bao quanh nó -->
+    <!-- Clear: ngăn chặn phần tử B chiếm vùng ko gian của phần tử A (với A là phần tử sd float) -->
+    
+    <style>
+        .element-parent {
+            border: 5px solid red;
+        }
+        .element-child {
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .element-a {
+            height: 100px;
+            background: #b4b400;
+        }
+        .element-b {
+            height: 150px;
+            background: blue;
+        }
+        .element-c {
+            height: 200px;
+            background: green;
+        }
+        .element-d {
+            height: 200px;
+            background: purple;
+        }
+        .element-e {
+            height: 200px;
+            background: orange;
+        }
+        .element-a {
+            float: left; /* folat: left: phần tử nằm phía bên trái */
+        }
+        .element-b {
+            clear: left; /* clear: left: ngăn chặn phàn tử B chiếm chỗ phần tử A có sử dụng float:left */
+        }
+        .element-c {
+            float: right; /* folat: right: phần tử nằm phía bên phải */
+        }
+        .element-d {
+            clear: right; /* clear: right: ngăn chặn phàn tử B chiếm chỗ phần tử A có sử dụng float:right */
+        }
+        .element-e {
+            clear: both; /* clear:both: khi cả 2 ptu đều sd float, để ngăn chặn thành phần C hiếm vùng ko gian còn trống chuáng ta sử dụng clear:both */
+        }
+        .clear-both {
+            clear: both;
+        }
+   
+    </style>
+    <div class="element-parent">
+        <div class="element-child element-a">Phần tử A</div>
+        <div class="element-child element-b">Phần tử B</div>
+        <div class="element-child element-c">Phần tử C</div>
+        <div class="element-child element-d">Phần tử D</div>
+        <div class="element-child element-e">Phần tử E</div>
+        <div class="clear-both"></div>
+    </div>
+
+</body>
+</html>

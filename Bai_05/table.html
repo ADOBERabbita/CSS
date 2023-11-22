@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Table: bảng -->
+
+    <style>
+        .bang01 {
+            border-collapse: collapse;
+        }
+
+        .bang01,
+        .header-bang01,
+        .content-bang01 {
+            border: 1px solid #ddd;
+        }
+
+        .header-bang01,
+        .content-bang01 {
+            padding: 10px;
+        }
+
+        .header-bang01 {
+            color: white;
+            background-color: orange;
+        }
+
+        .bang02 {
+            border: 1px solid #ddd;
+        }
+
+        .bang02,
+        .header-bang02,
+        .content-bang02 {
+            padding: 7px;
+        }
+    </style>
+
+    <table class="bang01">
+        <thead>
+            <tr>
+                <th class="header-bang01">Hàng 1 Cột 1</th>
+                <th class="header-bang01">Hàng 1 Cột 2</th>
+                <th class="header-bang01">Hàng 1 Cột 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="content-bang01">Hàng 2 Cột 1</td>
+                <td class="content-bang01">Hàng 2 Cột 2</td>
+                <td class="content-bang01">Hàng 2 Cột 3</td>
+            </tr>
+            <tr>
+                <td class="content-bang01">Hàng 3 Cột 1</td>
+                <td class="content-bang01">Hàng 3 Cột 2</td>
+                <td class="content-bang01">Hàng 3 Cột 3</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <table class="bang02">
+        <thead>
+            <th class="header-bang02">Hàng 1 Cột 1</th>
+            <th class="header-bang02">Hàng 1 Cột 2</th>
+            <th class="header-bang02">Hàng 1 Cột 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="content-bang02">Hàng 2 Cột 1</td>
+                <td class="content-bang02">Hàng 2 Cột 2</td>
+                <td class="content-bang02">Hàng 2 Cột 3</td>
+            </tr>
+            <tr>
+                <td class="content-bang02">Hàng 3 Cột 1</td>
+                <td class="content-bang02">Hàng 3 Cột 2</td>
+                <td class="content-bang02">Hàng 3 Cột 3</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <style>
+        .bang03 {
+            border-collapse: collapse;
+        }
+        .bang03, .header-bang03, .content-bang03, .-width {
+            border: 1px solid #ddd;
+        }
+        .header-bang03, .content-bang03, .-width {
+            padding: 10px;
+        }
+        #hang2cot1 {
+            width: 700px;
+        }
+        .-width {
+            width: 50px;
+        }
+    </style>
+    <table class="bang03">
+        <thead>
+            <tr>
+                <th class="header-bang03">Hàng 1 Cột 1</th>
+                <th class="-width">Hàng 1 Cột 2</th>
+                <th class="-width">Hàng 1 Cột 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="hang2cot1" class="content-bang03">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam ipsam
+                    aliquam nesciunt obcaecati numquam totam nam, quas minus voluptatibus maiores voluptatem accusamus
+                    accusantium pariatur quis omnis corrupti suscipit id quae. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Omnis aspernatur, doloremque modi unde nisi quasi minus voluptas vel expedita
+                    temporibus rerum voluptatibus, quisquam ipsum, eos dolorum tempora ab laborum. Deleniti?</td>
+                <td class="-width">Hàng 2 Cột 2</td>
+                <td class="-width">Hàng 2 Cột 3</td>
+            </tr>
+            <tr>
+                <td class="content-bang03">Hàng 3 Cột 1</td>
+                <td class="-width">Hàng 3 Cột 2</td>
+                <td class="-width">Hàng 3 Cột 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model, Borders, Padding, Margins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        .boxmodel {
+            
+            border: 10px solid #000; /* đường viền bao quanh padding và nội dung, dùng để bao bọc 1 element 
+            Tên thuộc tính: border-style
+            Các kiểu border: - dotted: đường viền chấm
+                             - dashed: đường viền nét đứt
+                             - solid: đường viền liền
+                             - double: đường viền kép
+                             - groove: đường viền có rãnh 3D
+                             - ridge: đường viền có gờ 3D
+                             - inset: đường viền 3D chìm vào trong
+                             - outset: đường viền 3D nổi lên trên
+                             - none: ko có viền
+                             - hidden: đường viền bị ẩn */
+            
+            padding: 16px 20px; /* tạo 1 khonagr trống xung quanh nội dung và nằm bên trong đường viền */
+            
+            margin: 20px; /* để tạo khoảng các giữa element này với element khác, nằm bên ngoài border */
+            
+            height: 30px; /* chiều cao của element
+            min-height: chiều cao tối thiểu của element
+            max-height: chiều cao tối đa của element */
+            
+            width: 100px; /* chiều rộng của element
+            min-width: chiều rộng tối thiểu của element
+            max-width: chiều rộng tối đa của element */
+
+            color: green; /* thuộc tính color đc sd để đặt màu cho văn bản */
+
+            text-align: center; /* sd để thiết lập căn lề ngang của văn bản
+                        left: căn trái
+                        right: căn phải
+                        center: căn giữa
+                        justify: căn đều 2 bên */
+            
+            text-transform: capitalize; /* sd để chỉ định chữ hoa và chữ thường trong văn bản
+                            uppercase: VIẾT CHỮ HOA
+                            lowercase: viết chữ thường
+                            capitalize: Viết Hoa Chữ Cái Đầu */
+            
+            font-family: 'Roboto', sans-serif; /* để chỉ định font chữ của văn bản */
+
+            font-style: normal; /* chủ yếu đc sử dụng để chỉ định văn bản in nghiêng
+                        italic: văn bản đc hiển thị in nghiêng
+                        oblique: văn bản "nghiêng" ít đc sử dụng */
+
+            font-weight: bold; /* để chỉ định độ dày của chữ
+                         normal: bhtg
+                         bold: in đậm
+                         100, 200, 300,...800,900 */
+
+            font-size: 16px; /* dùng để đặt kích thước của văn bản */
+        }
+    </style>
+    <div class="boxmodel">Button Text</div>
+    <div class="boxmodel">Nội dung 02</div>
+    <h1>Danh sách sản phẩm</h1>
+    <ul>
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-facebook-messenger"></i></li>
+        <li><i class="fa-brands fa-google-drive"></i></li>
+        <li><i class="fa-brands fa-tiktok"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+    </ul>
+</body>
+</html>

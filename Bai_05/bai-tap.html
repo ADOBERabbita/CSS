@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <style>
+        .header {
+            font-weight: bold;
+            color: white;
+            background-color: orange;
+            height: 30px;
+            position: sticky;
+            left: 0px;
+            top: 0px;
+            z-index: 2;
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .content-header1 {
+            text-align: center;
+            width: 100px;
+            
+            padding: 11px 14px;
+            position: absolute;
+            top: 0px;
+            left: 20px;
+        }
+        .content-header1:hover {
+            background-color: black;
+            opacity: 0.2;
+        }
+        .content-header2 {
+            width: 100px;
+            width: 100px;
+            text-align: center;
+            padding: 11px 14px;
+            position: absolute;
+            top: 0px;
+            left: 148px;
+        }
+        .content-header2:hover {
+            background-color: black;
+            opacity: 0.2;
+        }
+        .content-header3 {
+            width: 100px;
+            text-align: center;
+            padding: 11px 14px;
+            position: absolute;
+            top: 0px;
+            left: 277px;
+        }
+        .content-header3:hover {
+            background-color: black;
+            opacity: 0.2;
+        }
+        .content-header4 {
+            width: 100px;
+            text-align: center;
+            padding: 11px 14px;
+            position: absolute;
+            top: 0px;
+            left: 406px;
+        }
+        .content-header4:hover {
+            background-color: black;
+            opacity: 0.2;
+        }
+        .content-header5 {
+            width: 100px;
+            text-align: center;
+            padding: 11px 14px;
+            position: absolute;
+            top: 0px;
+            left: 535px;
+        }
+        .content-header5:hover {
+            background-color: black;
+            opacity: 0.2;
+        }
+        .content {
+            background-color: rgb(25, 91, 190);
+            padding: 60px 30px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        .content::before{
+            content: "";
+            display: block;
+            width: 120px;
+            height: 120px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            opacity: 0.3;
+        }
+        .content::after{
+            content: "";
+            display: block;
+            width: 240px;
+            height: 240px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+            opacity: 0.3;
+        }
+        .inner-content {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        .content .inner-content::first-letter {
+            font-size: 40px;
+        }
+        .content .inner-content::first-line {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <header class="header">
+            <div class="content-header">
+            <div class="content-header1">Trang chủ</div>
+            <div class="content-header2">Giới thiệu</div>
+            <div class="content-header3">Sản phẩm</div>
+            <div class="content-header4">Tin tức</div>
+            <div class="content-header5">Liên hệ</div>
+        </div>
+    </header>
+    <br>
+    <div class="content">
+        <div class="inner-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.
+        </div>
+    </div>
+    <br>
+    <div class="content">
+        <div class="inner-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.
+        </div>
+    </div>
+    <br>
+    <div class="content">
+        <div class="inner-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.
+        </div>
+    </div>
+    <br>
+    <div class="content">
+        <div class="inner-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum ut mollitia temporibus, cumque ullam quod
+            nam quos voluptatem reiciendis harum explicabo? Officiis tempora repellendus omnis et. Voluptates, deserunt
+            atque.
+        </div>
+    </div>
+
+</body>
+
+</html>

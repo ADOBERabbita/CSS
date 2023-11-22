@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+
+<body>
+
+    <!-- Display (hiển thị) -->
+    
+    <style>
+        .inline, .block, .inline-block { /* inline: ko đặt đc chiều rộng và chiều cao, ko thêm đc margin và padding cho trên và dưới */
+            background: orange;
+            border: 1px solid #000;
+        }
+        .block {
+            display: block; /* block: chiều rộng kéo từ trái qua phải, luôn bắt đầu ở 1 dòng mới. cho phép đặt chiều rộng, cao, margin, padding cho trên, dưới */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+        }
+        .inline-block {
+            display: inline-block; /* inline-block: chiều rộng mặc định bằng chiều rộng của element, ko bắt đầu ở 1 dòng mới, cho phép đặt chiều rộng, cao, cho phép đặt margin, padding trên, dưới */
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+            height: 20px;
+            text-align: center;   
+        }
+        .none {
+            display: none; /* ẩn đi hoàn toàn */
+        }
+        .hidden { /* ẩn nhưng vẫn chiếm 1 khoảng trống */
+            visibility: hidden;
+            color: blue;
+        }
+        .visible {
+            color: green;
+        } /* hiển thị, mặc định */
+    </style>
+
+    <h2>1. display: inline;</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="inline">Thẻ inline 1</span> <span
+            class="inline">Thẻ inline 2</span> Commodi porro, repellat laudantium saepe magni velit
+        obcaecati ea eius dolorem distinctio repellendus perferendis dolor aperiam molestias asperiores aliquid a odio!
+        Cupiditate.
+    </p>
+
+    <h2>2. display: block</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="block">Thẻ block 1</span> <span
+            class="block">Thẻ block 2</span> Commodi porro, repellat laudantium saepe magni velit
+        obcaecati ea eius dolorem distinctio repellendus perferendis dolor aperiam molestias asperiores aliquid a odio!
+        Cupiditate.
+    </p>
+
+    <h2>3. display: inline-block</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="inline-block">Thẻ inline-block
+            1</span> <span class="inline-block">Thẻ inline-block 2</span> Commodi porro, repellat laudantium saepe magni
+        velit
+        obcaecati ea eius dolorem distinctio repellendus perferendis dolor aperiam molestias asperiores aliquid a odio!
+        Cupiditate.
+    </p>
+
+    <h2>4. display: none</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="none">Thẻ none 
+            1</span> <span class="none">Thẻ none 2</span> Commodi porro, repellat laudantium saepe magni
+        velit
+        obcaecati ea eius dolorem distinctio repellendus perferendis dolor aperiam molestias asperiores aliquid a odio!
+        Cupiditate.
+    </p>
+
+    <h2>5. vasibility: hidden</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="hidden">Thẻ hidden 
+            1</span> <span class="hidden">Thẻ hidden 2</span> Commodi porro, repellat laudantium saepe magni
+        velit
+        obcaecati ea eius dolorem distinctio repellendus perferendis dolor aperiam molestias asperiores aliquid a odio!
+        Cupiditate.
+    </p>
+
+    <h2>6. vasibility: visible</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="visible">Thẻ visible 
+            1</span> <span class="visible">Thẻ visible 2</span> Commodi porro, repellat laudantium saepe magni
+        velit
+        obcaecati ea eius dolorem distinctio repellendus perferendis dolor aperiam molestias asperiores aliquid a odio!
+        Cupiditate.
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Position (vị trí): xác định vị trí element muốn hiển thị-->
+
+    <style>
+        .box01, .box02 {
+            background: orange;
+            border: 3px solid #000;
+            width: 150px;
+            height: 150px;
+            font-size: 40px;
+        }
+
+        .box03, .box04 {
+            background: orange;
+            border: 3px solid #000;
+            width: 150px;
+            height: 150px;
+            font-size: 40px;
+        }
+        .box04 {
+            position: relative;
+            /* top: 20px; */
+            left: 200px;
+            bottom: 100px;
+        }
+
+        .box05, .box06 {
+            background: orange;
+            border: 3px solid #000;
+            width: 150px;
+            height: 150px;
+            font-size: 20px;
+        }
+        .box06 {
+            position: relative; /* relative: vị trí tương đối do với vị trí mặc định và áp dụng được các thuốc tính top,
+            right, bottom, left */
+            left: 200px;
+            bottom: 100px;
+        }
+        .box6_1 {
+            background: green;
+            border: 3px solid #585858;
+            width: 50px;
+            height: 50px;
+            font-size: 10px;
+            position: absolute; /* absolute: vị trí tuyệt đối cho các thành phần theo thành phần bao ngoài hoặc cửa sổ
+            tình duyệt */
+            top: 46px;
+            left: 43px;
+        }
+
+        .box07, .box08 {
+            background: orange;
+            border: 3px solid #000;
+            width: 150px;
+            height: 150px;
+            font-size: 40px;
+        }
+        .box08 {
+            position: relative;
+            left: 200px;
+            bottom: 100px;
+        }
+        .box8_1 {
+            background: green;
+            border: 3px solid #585858;
+            width: 80px;
+            height: 80px;
+            font-size: 10px;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+        .box8_11 {
+            background: green;
+            border: 3px solid #585858;
+            width: 100%;
+            height: 40px;
+            font-size: 10px;
+            position: fixed; /* fixed: đc định vị so với khung hình(viewport), có nghĩa là nó luôn ở 1 vị trí cố định
+            ngay cả khi trang đc cuộn, top,right, bottom, left đc sd để định vị element */
+            top: 0px;
+            left: 0px;
+        }
+
+        .box09 {
+            background: blue;
+            border: 2px solid #000;
+            width: 80px;
+            height: 80px;
+            font-size: 20px;
+            position: sticky; /* sticky: kết hợp của relative và fixed. Nó cũng na ná relative nhưng khi scroll đến vị
+            trí của nó sẽ giống fixed và khi scroll lên ra khỏi nó thì nó sẽ quay lại vị trí ban đầu dưới dạng relative
+            */
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+
+    <div class="box01">
+        Box 1
+    </div>
+    <div class="box02">
+        Box 2
+    </div>
+    <hr>
+    <div class="box03">
+        Box 3
+    </div>
+    <div class="box04">
+        Box 4
+    </div>
+    <hr>
+    <div class="box05">
+        Box 5
+    </div>
+    <div class="box06">
+        Box 6
+        <div class="box6_1">
+            Box 6_1
+        </div>
+    </div>
+    <hr>
+    <div class="box07">
+        Box 7
+    </div>
+    <div class="box08">
+        Box 8
+        <div class="box8_1">
+            Box 81
+            <div class="box8_11">
+                Box 811
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <div class="box09">
+        Box 9
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut optio id nemo doloribus. Consequuntur unde veritatis numquam saepe dignissimos distinctio libero eum dolores nihil sequi, et, labore necessitatibus nisi laboriosam.</p>
+
+</body>
+
+</html>

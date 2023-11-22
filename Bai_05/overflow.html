@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- overflow (tràn ra): xác định điều gì xảy ra nếu 1 thành phần box tràn nội dung -->
+    
+    <style>
+        .box1 {
+            background-color: rgb(127, 127, 255);
+            border: 3px solid black;
+            width: 100px;
+            height: 200px;
+            overflow: visible; /* khi chiều cao của box ko đủ chưa text, thì text vẫn hiển thị tràn qua box, đây là mặc định */
+        }
+        .box2 {
+            position: relative;
+            left: 200px;
+            background-color: rgb(255, 209, 124);
+            border: 3px solid black;
+            width: 100px;
+            height: 200px;
+            overflow: hidden; /* khi chiều cao của box ko đủ chứa text, thì text bị tràn sẽ đc ẩn đi */
+        }
+        .box3 {
+            position: relative;
+            left: 400px;
+            background-color: rgb(121, 255, 121);
+            border: 3px solid black;
+            width: 100px;
+            height: 200px;
+            overflow: scroll; /* khi chiều cao của box ko đủ chưa text, thì text bị tràn ra sẽ đc ẩn đi và xuất hiện thanh scroll, khi cuộn sẽ hiển thị text. khi sử dụng thành phần này sẽ xuất hiện cả thanh scroll ngang và dọc */ 
+        }
+        .box4 {
+            position: relative;
+            left: 600px;
+            background-color: rgb(255, 121, 121);
+            border: 3px solid black;
+            width: 100px;
+            height: 200px;
+            overflow: auto; /* khi chiều cao của box ko đủ chứa text, thì thanh scroll sẽ tự động hiển thị. khi chiều cao box đủ chưa text sẽ mất thanh scroll */
+        }
+        .box5 {
+            position: relative;
+            left: 720px;
+            bottom: 206px;
+            background-color: rgb(255, 121, 121);
+            border: 3px solid black;
+            width: 100px;
+            height: 200px;
+            overflow: auto;
+        }
+    </style>
+    
+    <div class="box1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, at explicabo fuga sint maxime repellat,
+        amet ipsam dignissimos quas neque error quo similique earum autem dolorum illum ab facilis ducimus.
+    </div>
+    <br>
+    <div class="box2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, at explicabo fuga sint maxime repellat,
+        amet ipsam dignissimos quas neque error quo similique earum autem dolorum illum ab facilis ducimus.
+    </div>
+
+    <div class="box3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, at explicabo fuga sint maxime repellat,
+        amet ipsam dignissimos quas neque error quo similique earum autem dolorum illum ab facilis ducimus.
+    </div>
+
+    <div class="box4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, at explicabo fuga sint maxime repellat,
+        amet ipsam dignissimos quas neque error quo similique earum autem dolorum illum ab facilis ducimus.
+    </div>
+
+    <div class="box5">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </div>
+
+</body>
+</html>

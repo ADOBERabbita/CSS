@@ -1,0 +1,80 @@
+<!-- 1.Khái niệm
+
+- CSS: viết tắt của Cascading Style Sheets
+- Là ngôn ngữ được dùng để định dạng kiểu hiển thị cho các phần tử HTML
+
+2.Cú pháp
+
+selector {
+    property:value;
+}
+
+trong đó: - selector: Được gọi là bộ chọn
+          - property: Được gọi là thuộc tính
+          - value: Được gọi là giá trị của thuộc tính
+
+3. Selector
+
+- Bộ chọn CSS chọn các phần tử HTML mà bạn muốn tạo kiểu
+- Ví dụ: Các thẻ <h1></h1>;<p></p>;<table></table>;...thì viết trong css sẻ chỉ lấy tên thẻ là h1,p,table 
+
+Bộ chọn CSS đc chia thành 5 loại:
+- Simple selectors (Bộ chọn đơn giản)
+- Combinator selectors (Bộ chọn tổ hợp)
+- Pseudo-class selectors (Bộ chọn lớp giả)
+- Pseudo-elements selectors (Bộ chọn phần tử giả)
+- Attrubute selectors (Bộ chọn thuộc tính)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Simple selectors (Bộ chọn đơn giản) -->
+        
+    <style>
+        h1 {
+            color: red;
+        }
+        p {
+            font-size: 30px;
+        }
+        #the02 {
+            color: green;
+        }
+        .text-orange {
+            color: orange;
+        }
+        /* Bộ chọn chung: chọn tất cả
+        * {
+            text-align: center;
+        } (ít dùng) 
+        */
+        h2, p, #the06, .the07 {
+            background: purple;
+        }
+    </style>
+
+    <!-- Bộ chọn elements: chọn các phần tử HTML dựa trên tên phần tử -->
+    <h1>Nội dung thẻ h1</h1>
+    <p>Nội dung thẻ p</p>
+
+    <!-- Bộ chọn id: sử dụng thuộc tính id của 1 phần tử HTML để chọn 1 phần tử cụ thể (tên id ko đc bắt đầu bằng số) -->
+    <p id="the02">Nội dung 02</p>
+
+    <!-- Bộ chọn class: chọn các thành phần HTML với 1 thuộc tính class cụ thể (tên class ko đc bắt đầu bằng số) -->
+    <p class="text-orange">Nội dung 03</p>
+    <p class="text-orange">Nội dung 04</p>
+
+    <!-- Bộ chọn nhóm: chọn tất cả các element,id,class có cùng thuộc tính và giá trị thuộc tính -->
+    <h2>Nội dung thẻ h2</h2>
+    <p>Nội dung thẻ 05</p>
+    <p id="the06">Nội dung thẻ 06</p>
+    <p class="the07">Nội dung thẻ 07</p>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Bộ chọn attribute đc sd để chọn các phần tử có thuộc tính đc chỉ định -->
+
+    <style>
+        /* a[target] {                 Chọn tất cả các phần tử có thuộc tính [...]
+            background: yellow;
+        } */
+        /* a[title= "Website Google"] {       chọn tất cả các phần tử có thuộc tính [...="..."] phải chứa giá trị value
+            background: yellow;               chỉ đc có gtri duy nhất là value, nếu có thêm gtri khác sẽ ko đc chọn, gtri có thể bao gồm nhiều từ
+        } */
+        /* a[title~= "Facebook] {           chọn tất cả các phần tử có thuộc tính [...="..."] phải chứa giá trị value
+            background: yellow;             nhưng value đó phải đúng độc lập, ko đc viết liền với từ khác, value phải là 1 từ khóa duy nhất
+        } */
+        /* a[title|= "Facebook"] {          chọn tất cả các phần tử có thuộc tính [...="..."], gtri có thể chính xác là gtri đc chỉ định or gtri đc chỉ định theo dấu gạch nối (-)
+            background: yellow;             lưu ý: gtri phải là 1 từ nguyên vẹn, đơn lẻ như class="top" or theo sau là dấu gạch ngang (-), như class="top-text"
+        } */
+        /* a[title^= "Facebbok"] {          chọn tất cả các phần tử có thuộc tính [...="..."] bắt đầu bằng gtri value
+            background: yellow;             ko có ngoại lệ và chọn tất cả các phần tử bắt đầu bằng value, đc phép viết liền với các từ khác
+        } */
+        /* a[title$= "Facebbok"] {          chọn tất cả các phần tử có thuộc tính [...="..."] kết thúc bằng gtri value
+            background: yellow;             gtri có thể đc viết liền với từ khác
+        } */
+        /* a[title*= "Facebbok"] {          chọn tất cả các phần tử có thuộc tính [...="..."] chứa gtri value
+            background: yellow;             gtri ko nhất thiết phải là 1 từ nguyên vẹn
+        } */
+    </style>
+
+    <a href="https://www.google.com/" title="Website Google">Google</a>
+    <a href="https://www.facebook.com/" title="Website Facebook" target="_blank">Facebook</a>
+    <a href="https://www.youtube.com/" title="Website Youtube" target="">Youtube</a>
+
+</body>
+</html>

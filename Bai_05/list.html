@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- List: danh sách -->
+
+    <style>
+        ul {
+            list-style-type: disc;
+            /* hình tròn đen, mặc định
+                             circle: hình tròn viền đen, trống bên trong
+                             square: hình vuông
+                             disclosure-closed: hình tam giác trỏ sang phải
+                             none: bị ẩn
+                             upper-romen: chữ La Mã I, II, III
+                             lower-alphal: chữ cái a, b, c */
+        }
+
+        #muc02 {
+            list-style-type: circle;
+        }
+
+        #muc03 {
+            list-style-type: square;
+        }
+
+        ol {
+            list-style-type: circle;
+            list-style-position: outside;
+            /* các điểm đánh dấu nằm bên ngoài
+                                 inside: các điểm đánh dấu nằm bên trong */
+        }
+    </style>
+
+    <!-- list-style-ytpe: chỉ định kiểu đánh dấu mục danh sách -->
+    <ul>
+        <li>Mục 1</li>
+        <li id="muc02">Mục 2</li>
+        <li id="muc03">Mục 3</li>
+    </ul>
+
+    <!-- list-style-posotion: chỉ định vị trí của các điểm đánh dấu mục danh sách -->
+    <ol>
+        <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur possimus dolor dignissimos,
+            tempora mollitia suscipit quam aut, ea exercitationem delectus odio nisi itaque molestias nihil, in harum
+            iste. Vero.
+        </li>
+        <li id="">Mục 2</li>
+        <li id="">Mục 3</li>
+    </ol>
+    
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Pseudo-elements selectors (Bộ chọn phần tử giả): đc dùng để tạo ra 1 phần tử giả và định kiểu (style) cho phần tử giả đó mà ko cần tạo ra 1 phần tử thật -->
+
+    <style>
+        .box1::before { /* ::before : chèn nd nào đó trước nd của mỗi element (phải thêm content:"") */
+            content: "Nội dung đằng trước";
+            background-color: orange;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .box1::after { /* ::after : chèn nd nào đó sau nd của mỗi element (phải thêm content:"") */
+            content: "Nội dung đằng sau";
+            background-color: green;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .box2::first-letter { /* ::first-letter : chọn chữ cái đầu tiên của mỗi element */
+            font-size: 40px;
+        }
+
+        .box2::first-line { /* ::first-line : chọn dòng tiên của mỗi element */
+            text-transform: uppercase;
+        }
+
+        ul li::marker { /* ::marker : chọn các điểm đánh dấu của các mục danh sách ( thẻ <ul> và <ol>) */
+            color: red;
+            font-size: 20px;
+        }
+        .text::selection { /* ::selection : đc dùng để style cho 1 vùng văn bản đc người dùng chọn (bôi đen), chỉ có 1 số thuộc tính css khả dụng với  ::selection là color, backgroud, cursor và outline */
+            background-color: red;
+        }
+        .text { /* nhận giá trị từ 0 đến 1, giá trị càng thấp thì element càng mờ */
+            opacity: 0.5;
+        }
+    </style>
+
+    <div class="box1">
+        Nội dung
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum blanditiis ducimus quis natus voluptatum
+        distinctio eaque at temporibus nostrum iste ipsam perferendis, error non modi dignissimos quia obcaecati
+        incidunt?
+    </div>
+
+    <ul>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+        <li>Mục 4</li>
+    </ul>
+
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, perspiciatis odit voluptatibus non, neque eos
+        delectus magni reprehenderit, commodi porro sint asperiores sit repudiandae incidunt velit harum optio quo
+        sapiente.
+    </p>
+
+</body>
+
+</html>

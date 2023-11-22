@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---->
+    <style>
+        .box1 {
+            background: gray;
+            width: 200px; 
+            height: 100px;
+            padding: 30px;
+            border: 5px solid black;
+            box-sizing: content-box; /* mặc định, w/h chỉ bao gồm "nội dung" của phần tử. w/h = contnent */
+        }
+        .box2 {
+            background: gray;
+            width: 200px; 
+            height: 100px;
+            padding: 30px;
+            border: 5px solid black;
+            box-sizing: border-box; /* w/h bao gồm: content, padding, border, của phần tử. w/h = content + padding +border */
+        }
+    </style>
+    <div class="box1">
+        Nội dung của box 1
+    </div>
+    <br>
+    <div class="box2">
+        Nội dung của box 2
+    </div>
+</body>
+</html>
